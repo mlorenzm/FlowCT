@@ -1,7 +1,7 @@
 #' Remove batch effect
 #'
 #' It removes posible batch effects present in multiple FCS stored in a \code{FCS.SCE} object. It based on: \enumerate{
-#'     \item Seurat's Canonical Correlation Analysis (CCA) or Reciprocal PCA (RPCA), see the \href{https://satijalab.org/seurat/Seurat_AlignmentTutorial.html}{tutorial} for more information (another \href{https://satijalab.org/seurat/v3.0/integration.html}{one}).
+#'     \item Seurat's Canonical Correlation Analysis (CCA) or Reciprocal PCA (RPCA), see the \href{https://satijalab.org/seurat/archive/v2.4/seurat_alignmenttutorial}{tutorial} for more information (another \href{https://satijalab.org/seurat/v3.0/integration.html}{one}).
 #'     \item \href{https://portals.broadinstitute.org/harmony/}{Harmony}'s methodology.}
 #' @param fcs.SCE A \code{fcs.SCE} object generated through \code{\link[FlowCT:fcs.SCE]{FlowCT::fcs.SCE()}}.
 #' @param assay.i Name of matrix stored in the \code{fcs.SCE} object from which calculate correlation. Default = \code{"transformed"}.
